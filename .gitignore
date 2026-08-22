@@ -1,0 +1,44 @@
+# Obsidian - machine-specific workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+
+# Obsidian - plugin data (may contain secrets, e.g. remotely-save cloud credentials)
+.obsidian/plugins/*/data.json
+**/.obsidian/plugins/*/data.json
+
+# Obsidian - plugin bundles (installed per-machine; may embed vendor OAuth secrets)
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+**/.obsidian/plugins/*/main.js
+**/.obsidian/plugins/*/styles.css
+
+# Obsidian - caches & hot-reload
+.obsidian/cache
+.obsidian/hotkeys-backup.json
+**/.obsidian/cache
+**/.obsidian/hotkeys-backup.json
+
+# Obsidian trash
+.trash/
+**/.trash/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp files
+*.tmp
+*.bak
+*.log

@@ -1,0 +1,118 @@
+filters:
+  or:
+    - file.hasTag("concept")
+    - file.hasTag("moc")
+    - file.hasTag("project")
+formulas:
+  title: file.name
+properties:
+  note.area:
+    displayName: Area
+  note.topic:
+    displayName: Topic
+  note.status:
+    displayName: Status
+  note.difficulty:
+    displayName: Difficulty
+  note.reviewed:
+    displayName: Reviewed
+  note.created:
+    displayName: Created
+views:
+  - type: table
+    name: Semua Konsep Tech
+    filters:
+      and:
+        - file.hasTag("concept")
+    order:
+      - formula.title
+      - area
+      - topic
+      - status
+      - difficulty
+      - created
+  - type: table
+    name: Perlu Dipelajari
+    filters:
+      and:
+        - file.hasTag("concept")
+        - note.status == "to-learn"
+    order:
+      - formula.title
+      - area
+      - topic
+      - difficulty
+  - type: table
+    name: Sudah Direview
+    filters:
+      and:
+        - note.status == "reviewed"
+    order:
+      - formula.title
+      - area
+      - reviewed
+  - type: table
+    name: Software Engineering
+    filters:
+      and:
+        - note.area == "Software Engineering"
+    order:
+      - formula.title
+      - topic
+      - status
+  - type: table
+    name: Database
+    filters:
+      and:
+        - note.area == "Database"
+    order:
+      - formula.title
+      - topic
+      - status
+  - type: table
+    name: DevOps
+    filters:
+      and:
+        - note.area == "DevOps"
+    order:
+      - formula.title
+      - topic
+      - status
+  - type: table
+    name: Data Engineering
+    filters:
+      and:
+        - note.area == "Data Engineering"
+    order:
+      - formula.title
+      - topic
+      - status
+  - type: table
+    name: Cyber Security
+    filters:
+      and:
+        - note.area == "Cyber Security"
+    order:
+      - formula.title
+      - topic
+      - status
+  - type: table
+    name: Semua MOC
+    filters:
+      and:
+        - file.hasTag("moc")
+    order:
+      - formula.title
+      - area
+      - status
+  - type: table
+    name: Proyek Aktif
+    filters:
+      and:
+        - file.hasTag("project")
+        - note.status == "active"
+    order:
+      - formula.title
+      - area
+      - deadline
+      - progress
