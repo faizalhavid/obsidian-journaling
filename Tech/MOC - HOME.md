@@ -20,6 +20,7 @@ created: 2026-08-21
 - [[MOC - DevOps]]
 - [[MOC - Data Engineering]]
 - [[MOC - Cyber Security]]
+- [[MOC - AI Engineering]]
 
 ---
 
@@ -31,6 +32,8 @@ created: 2026-08-21
 - **Data Engineering ⇄ DevOps** → [[Docker]], [[Kubernetes]], [[Orchestration]]
 - **Software Engineering ⇄ Cyber Security** → [[Secure Coding]], [[OWASP Top 10]]
 - **Software Engineering ⇄ Data Engineering** → [[Python]], [[API Design]]
+- **AI Engineering ⇄ Data Engineering** → [[Embeddings]], [[Vector Database]], [[RAG]]
+- **AI Engineering ⇄ Software Engineering** → [[AI Agent]], [[Prompt Engineering]], [[MCP]]
 
 ---
 

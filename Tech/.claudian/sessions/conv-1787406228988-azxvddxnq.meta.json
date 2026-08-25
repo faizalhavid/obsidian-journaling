@@ -1,0 +1,24 @@
+{
+  "id": "conv-1787406228988-azxvddxnq",
+  "providerId": "claude",
+  "title": "Create AI Engineering MOC and connect",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787406228995,
+  "lastActivityAt": 1787406426856,
+  "sessionId": "2203b51c-6785-47d8-8574-b87514235428",
+  "selectedModel": "opus",
+  "providerState": {
+    "providerSessionId": "2203b51c-6785-47d8-8574-b87514235428"
+  },
+  "currentNote": "99_Templates/Template - MOC.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 1574,
+    "cacheReadInputTokens": 67521,
+    "contextWindow": 200000,
+    "contextTokens": 69096,
+    "percentage": 35,
+    "contextWindowIsAuthoritative": true
+  }
+}

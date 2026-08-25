@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787406228988-azxvddxnq",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787406229151-vdxwpbt",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787406228979-d852owj",
+      "timestamp": 1787406228979,
+      "rawDisplayText": "create new moc for \"AI Engineering\" and connect it with MOC home and make some topic (store in 03_resources)",
+      "canonicalText": "create new moc for \"AI Engineering\" and connect it with MOC home and make some topic (store in 03_resources)",
+      "context": {
+        "currentNote": {
+          "path": "99_Templates/Template - MOC.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "f309f59fadb27860f7e4e0f8cc2c149e72339dfc1000f800b4e5d934a6d7d1f9",
+      "providerUserMessageId": "fe2d0f7f-feda-4e0d-a750-880937035df2",
+      "providerAssistantMessageId": "2f251f8c-0f2f-4082-8b19-e6ef061904b0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787406391727-kbwyu82",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787406391723-mrvf9f7",
+      "timestamp": 1787406391723,
+      "rawDisplayText": "sekarang buat concet baru untuk saya mencatat topik \"n8n\"",
+      "canonicalText": "sekarang buat concet baru untuk saya mencatat topik \"n8n\"",
+      "images": [],
+      "contentDigest": "dc3213ad4f308eb9812e880b6cab8242bf7a5d22d1fced995a0f04ef9ada32f3",
+      "providerUserMessageId": "d0136a55-a9ec-4007-ba38-555176eee9c3",
+      "providerAssistantMessageId": "f16be88e-2c77-49dd-9df3-e6abbde277ae"
+    }
+  ]
+}
