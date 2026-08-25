@@ -1,0 +1,50 @@
+filters:
+  and:
+    - file.hasTag("course")
+    - file.inFolder("04_Courses/DevOps")
+properties:
+  note.course:
+    displayName: Course
+  note.module:
+    displayName: Module
+  note.status:
+    displayName: Status
+  note.progress:
+    displayName: Progress
+  note.instructor:
+    displayName: Instructor
+  note.source:
+    displayName: Source
+views:
+  - type: table
+    name: Semua
+    filters:
+      and:
+        - '!file.name.endsWith(".base")'
+    order:
+      - file.name
+      - note.course
+      - note.module
+      - note.status
+      - note.progress
+    sort:
+      - property: note.status
+        direction: ASC
+  - type: table
+    name: Sedang Dipelajari
+    filters:
+      and:
+        - note.status == "in-progress"
+    order:
+      - file.name
+      - note.course
+      - note.progress
+  - type: table
+    name: Selesai
+    filters:
+      and:
+        - note.status == "completed"
+    order:
+      - file.name
+      - note.course
+      - note.progress

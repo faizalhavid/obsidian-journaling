@@ -3,6 +3,7 @@ filters:
     - file.hasTag("concept")
     - file.hasTag("moc")
     - file.hasTag("project")
+    - '!file.name.contains("Template")'
 formulas:
   title: file.name
 properties:
@@ -24,6 +25,7 @@ views:
     filters:
       and:
         - file.hasTag("concept")
+        - '!file.name.contains("Template")'
     order:
       - formula.title
       - area
@@ -31,6 +33,7 @@ views:
       - status
       - difficulty
       - created
+    sort: []
   - type: table
     name: Perlu Dipelajari
     filters:

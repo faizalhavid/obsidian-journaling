@@ -1,0 +1,94 @@
+filters:
+  and:
+    - file.hasTag("course")
+    - file.inFolder("04_Courses")
+properties:
+  note.area:
+    displayName: Area
+  note.course:
+    displayName: Course
+  note.status:
+    displayName: Status
+  note.progress:
+    displayName: Progress
+  note.source:
+    displayName: Source
+views:
+  - type: table
+    name: Semua Courses
+    filters:
+      and:
+        - '!file.name.endsWith(".base")'
+    order:
+      - file.name
+      - area
+      - status
+      - progress
+    sort:
+      - property: area
+        direction: ASC
+      - property: status
+        direction: ASC
+  - type: table
+    name: Sedang Dipelajari
+    filters:
+      and:
+        - note.status == "in-progress"
+    order:
+      - file.name
+      - area
+      - progress
+  - type: table
+    name: AI Engineering
+    filters:
+      and:
+        - note.area == "AI Engineering"
+    order:
+      - file.name
+      - status
+      - progress
+  - type: table
+    name: Software Engineering
+    filters:
+      and:
+        - note.area == "Software Engineering"
+    order:
+      - file.name
+      - status
+      - progress
+  - type: table
+    name: DevOps
+    filters:
+      and:
+        - note.area == "DevOps"
+    order:
+      - file.name
+      - status
+      - progress
+  - type: table
+    name: Database
+    filters:
+      and:
+        - note.area == "Database"
+    order:
+      - file.name
+      - status
+      - progress
+  - type: table
+    name: Cyber Security
+    filters:
+      and:
+        - note.area == "Cyber Security"
+    order:
+      - file.name
+      - status
+      - progress
+  - type: table
+    name: Data Engineering
+    filters:
+      and:
+        - note.area == "Data Engineering"
+    order:
+      - file.name
+      - status
+      - progress

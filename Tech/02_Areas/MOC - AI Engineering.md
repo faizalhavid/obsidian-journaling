@@ -1,10 +1,17 @@
 ---
-aliases: [AI Engineering, MOC AIE, AI Hub]
-tags: [moc, ai-engineering]
+aliases:
+  - AI Engineering
+  - MOC AIE
+  - AI Hub
+tags:
+  - moc
+  - ai-engineering
+  - daily
 status: draft
-area: AI Engineering
-created: 2026-08-22
-reviewed: 
+area: Meta
+created:
+  "{ date:YYYY-MM-DD }":
+reviewed:
 ---
 
 # 🧠 MOC - AI Engineering
@@ -25,6 +32,23 @@ reviewed:
 - [[Vector Database]] · [[Context Window]]
 
 ## 3. Praktik / Tools
+# 📅 {{date:YYYY-MM-DD}}
+
+## 🎯 Fokus Hari Ini
+- 
+
+## 📥 Capture (Inbox)
+- 
+
+## 🔗 Catatan yang Disentuh
+- [[]]
+
+## 💡 Learnings
+- 
+
+## ⏭️ Next
+- 
+
 
 - [[Claude Code]] · [[Claude Code Hooks]] · [[CLAUDE.md file|CLAUDE.md]]
 - [[LangChain]] · [[LlamaIndex]] · [[Ollama]]
@@ -35,7 +59,8 @@ reviewed:
 - [[LLMOps]] · [[Model Deployment]] · [[Inference Optimization]]
 - [[Guardrails & Safety]] · [[Multi-Agent System]]
 - [[AI Observability]]
-
+## 5. Courses
+- [[AnthropicSkilljar]]
 ---
 
 ## 🔁 Related MOCs
