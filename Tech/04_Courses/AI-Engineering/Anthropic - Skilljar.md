@@ -113,7 +113,7 @@ _Belum dicatat._
 
 ## Anthropic overview
 
-### Overview of Claude models
+## Overview of Claude models
 ![[Pasted image 20260825150058.png]]
 ![[Pasted image 20260825150132.png]]
 
@@ -160,11 +160,11 @@ Once Anthropic receives your request, Claude processes it through four main stag
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623277%2F03_-_001_-_Accessing_the_API_08.1748623277503.png)
 
-#### Tokenization
+##### Tokenization
 
 Claude first breaks your input text into smaller chunks called tokens. These can be whole words, parts of words, spaces, or symbols. For simplicity, think of each word as one token.
 
-#### Embedding
+##### Embedding
 
 Each token gets converted into an embedding - a long list of numbers that represents all possible meanings of that word. Think of embeddings as numerical definitions that capture semantic relationships.
 
@@ -177,13 +177,13 @@ Words often have multiple meanings. For example, "quantum" could refer to:
 *   Something extremely small or subatomic
 *   Quantum computing applications
 
-#### Contextualization
+##### Contextualization
 
 Claude refines each embedding based on surrounding words to determine the most likely meaning in context. This process adjusts the numerical representations to highlight the appropriate definition.
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623278%2F03_-_001_-_Accessing_the_API_11.1748623278717.png)
 
-#### Generation
+##### Generation
 
 The contextualized embeddings pass through an output layer that calculates probabilities for each possible next word. Claude doesn't always pick the highest probability word - it uses a mix of probability and controlled randomness to create natural, varied responses.
 
@@ -191,7 +191,7 @@ The contextualized embeddings pass through an output layer that calculates proba
 
 After selecting each word, Claude adds it to the sequence and repeats the entire process for the next word.
 
-#### When Claude Stops Generating
+##### When Claude Stops Generating
 
 After each token, Claude checks several conditions to decide whether to continue:
 
@@ -230,7 +230,7 @@ Don't worry about memorizing every detail - the goal is familiarizing yourself w
 
 Making your first request to the Anthropic API is straightforward once you understand the basic setup and structure. This guide walks through the essential steps to get Claude responding to your prompts using Python.
 
-#### Setting Up Your Environment
+### Setting Up Your Environment
 
 Before making any API calls, you need to install the required packages and configure your API key securely.
 
@@ -526,21 +526,21 @@ Different tasks call for different temperature ranges:
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623341%2F03_-_008_-_Temperature_10.1748623341732.png)
 
-#### Low Temperature (0.0 - 0.3)
+##### Low Temperature (0.0 - 0.3)
 
 *   Factual responses
 *   Coding assistance
 *   Data extraction
 *   Content moderation
 
-#### Medium Temperature (0.4 - 0.7)
+##### Medium Temperature (0.4 - 0.7)
 
 *   Summarization
 *   Educational content
 *   Problem-solving
 *   Creative writing with constraints
 
-#### High Temperature (0.8 - 1.0)
+##### High Temperature (0.8 - 1.0)
 
 *   Brainstorming
 *   Creative writing
@@ -593,7 +593,7 @@ Remember that temperature doesn't guarantee different outputs - it just changes 
 
 Temperature is one of the most practical parameters you can adjust to fine-tune Claude's behavior for your specific needs.
 
-### Response streaming
+#### Response streaming
 
 When building chat applications with Claude, there's a significant user experience challenge: responses can take 10-30 seconds to generate, leaving users staring at a loading spinner. The solution is response streaming, which lets users see text appear chunk by chunk as Claude generates it, creating a much more responsive feel.
 
@@ -687,14 +687,14 @@ with client.messages.stream(
 
 This gives you the best of both worlds: real-time streaming for users and a complete message object for your application logic.
 
-### Structured data
+#### Structured data
 
 When you need Claude to generate structured data like JSON, Python code, or bulleted lists, you'll often run into a common problem: Claude wants to be helpful and add explanatory text around your content. While this is usually great, sometimes you need just the raw data with nothing else.
 Consider building a web app that generates AWS EventBridge rules. Users enter a description, click generate, and expect to see clean JSON they can immediately copy and use. If Claude returns the JSON wrapped in markdown code blocks with explanatory text, users can't simply copy the entire response - they have to manually select just the JSON portion.
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623326%2F03_-_011_-_Structured_Data_02.1748623325858.png)
 
-#### The Problem with Default Responses
+##### The Problem with Default Responses
 
 By default, when you ask Claude to generate JSON, you might get something like this:
 
@@ -714,7 +714,7 @@ This rule captures EC2 instance state changes when instances start running.
 
 The JSON is correct, but it's wrapped in markdown formatting and includes explanatory text. For a web app where users need to copy the raw JSON, this creates friction in the user experience.
 
-#### The Solution: Assistant Message Prefilling + Stop Sequences
+##### The Solution: Assistant Message Prefilling + Stop Sequences
 
 You can combine assistant message prefilling with stop sequences to get exactly the content you want. Here's how it works:
 
@@ -748,7 +748,7 @@ The result is clean JSON with no extra formatting:
 }
 ```
 
-#### Processing the Response
+##### Processing the Response
 
 You might notice some extra newline characters in the response. These are easy to handle:
 
@@ -759,7 +759,7 @@ import json
 clean_json = json.loads(text.strip())
 ```
 
-#### Beyond JSON
+##### Beyond JSON
 
 This technique isn't limited to JSON generation. Use it anytime you need structured data without commentary:
 
@@ -775,7 +775,7 @@ This approach gives you precise control over Claude's output format, making it m
 ---
 ## Prompt evaluation
 
-#### Prompt evaluation
+### Prompt evaluation
 When working with Claude, writing a good prompt is just the beginning. To build reliable AI applications, you need to understand two critical concepts: prompt engineering and prompt evaluation. Prompt engineering gives you techniques for writing better prompts, while prompt evaluation helps you measure how well those prompts actually work.
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623381%2F04_-_001_-_Prompt_Evaluation_00.1748623381094.png)
@@ -1362,6 +1362,7 @@ Once you've implemented code grading, run your evaluation to get a baseline scor
 *   [001\_prompt\_evals\_fns.ipynb (opens in new tab)](https://cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/assets/1762977673/001_prompt_evals_fns.ipynb?response-content-disposition=attachment&Expires=1787746687&Signature=bwAWaPAw7AzEIC-idGXVWC26R42vhPW5TxYNTCtpkw2CEHYQQ12llHL5yg1Xev5qbL4Cux1sJpENs-Wi1aZtUJ3ng6j8D9gbjV8cJ4Rd272zyYtzmZlLReBnSqBzq7~ZXohebeCplatPrExARzg91zUZ54TTAtUjnUkoO7SDxsQ2vLqjizKihdiwihs8JvsbGG8Poe9Vv3n~q36SwPoRSKKX3L~EmkxZd8Egak1bmoF-5tsNoXnx8AHMNGX~xgxMFBdTQKVnqVaFqkjtU~NssAPFRkhNhl7w5H6EVNykwMW4RjzFP2Xls3HZ-XSrMCKK4X4WAJyID0wAffhQ2QlXZQ__&Key-Pair-Id=APKAI3B7HFD2VYJQK4MQ)
 
 ---
+
 
 ## Prompt engineering techniques
 _Belum dicatat._
