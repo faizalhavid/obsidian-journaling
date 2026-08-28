@@ -1,11 +1,11 @@
 [
   {
-    "task": "Write a Python function that parses an ARN (Amazon Resource Name) string and returns a dictionary with its components: partition, service, region, account-id, and resource. For example, 'arn:aws:s3:us-east-1:123456789012:bucket/my-bucket' should return {'partition': 'aws', 'service': 's3', 'region': 'us-east-1', 'account_id': '123456789012', 'resource': 'bucket/my-bucket'}."
+    "task": "Write a Python function that takes an AWS ARN string as input and extracts the region from it. The function should return the region code (e.g., 'us-east-1') or None if the ARN is invalid or doesn't contain a region."
   },
   {
-    "task": "Create a JSON object that defines an IAM policy allowing read-only access to a specific S3 bucket named 'company-logs'. The policy should permit s3:GetObject and s3:ListBucket actions only for resources under that bucket."
+    "task": "Create a JSON object that defines an AWS IAM policy allowing read-only access to a specific S3 bucket named 'my-company-logs'. The policy should allow ListBucket and GetObject actions."
   },
   {
-    "task": "Write a regex pattern that validates AWS EC2 instance IDs. The pattern should match strings that start with 'i-' followed by either 8 or 17 hexadecimal characters (e.g., 'i-1234abcd' or 'i-0123456789abcdef0')."
+    "task": "Write a regex pattern that validates AWS S3 bucket names according to AWS naming rules: 3-63 characters long, only lowercase letters, numbers, hyphens, and periods, must start and end with a letter or number, and cannot contain consecutive periods."
   }
 ]
