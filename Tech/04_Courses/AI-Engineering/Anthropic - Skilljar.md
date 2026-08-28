@@ -780,7 +780,7 @@ When working with Claude, writing a good prompt is just the beginning. To build 
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623381%2F04_-_001_-_Prompt_Evaluation_00.1748623381094.png)
 
-#### Prompt Engineering vs Prompt Evaluation
+### Prompt Engineering vs Prompt Evaluation
 
 Prompt engineering is your toolkit for crafting effective prompts. It includes techniques like:
 
@@ -825,12 +825,12 @@ Option 3 represents a more systematic approach to prompt development. By running
 
 While this approach requires more upfront investment in time and testing infrastructure, it pays dividends in the reliability and robustness of your final application. The goal is to catch problems during development rather than after your users encounter them.
 
-## A typical eval workflow
+### A typical eval workflow
 A typical prompt evaluation workflow follows five key steps that help you systematically improve your prompts through objective measurement. While there are many different ways to assemble these workflows and various open source and paid tools available, understanding the core process helps you start small and scale up as needed.
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623388%2F04_-_002_-_A_Typical_Eval_Workflow_00.1748623388621.png)
 
-### Step 1: Draft a Prompt
+##### Step 1: Draft a Prompt
 
 Start by writing an initial prompt that you want to improve. For this example, we'll use a simple prompt:
 
@@ -846,7 +846,7 @@ Please answer the user's question:
 
 This basic prompt will serve as our baseline for testing and improvement.
 
-### Step 2: Create an Eval Dataset
+##### Step 2: Create an Eval Dataset
 
 Your evaluation dataset contains sample inputs that represent the types of questions or requests your prompt will handle in production. The dataset should include questions that will be interpolated into your prompt template.
 
@@ -860,7 +860,7 @@ For this example, our dataset includes three questions:
 
 In real-world evaluations, you might have tens, hundreds, or even thousands of records. You can assemble these datasets by hand or use Claude to generate them for you.
 
-### Step 3: Feed Through Claude
+##### Step 3: Feed Through Claude
 
 Take each question from your dataset and merge it with your prompt template to create complete prompts. Then send each one to Claude to get responses.
 
@@ -875,7 +875,7 @@ What's 2+2?
 
 Claude might respond with "2 + 2 = 4" for the math question, provide oatmeal cooking instructions for the second question, and give the distance to the Moon for the third.
 
-### Step 4: Feed Through a Grader
+##### Step 4: Feed Through a Grader
 
 The grader evaluates the quality of Claude's responses by examining both the original question and Claude's answer. This step provides objective scoring, typically on a scale from 1 to 10, where 10 represents a perfect answer and lower scores indicate room for improvement.
 
@@ -889,7 +889,7 @@ In our example, the grader might assign:
 
 The average score across all questions gives you an objective measurement: (10 + 4 + 9) ÷ 3 = 7.66
 
-### Step 5: Change Prompt and Repeat
+##### Step 5: Change Prompt and Repeat
 
 Now that you have a baseline score, you can modify your prompt and run the entire process again to see if your changes improve performance.
 
@@ -921,7 +921,7 @@ The key benefit of this workflow is getting objective measurements of prompt per
 
 This systematic approach removes guesswork from prompt engineering and gives you confidence that your changes are actually improvements rather than just different variations.
 
-## Generating test datasets
+#### Generating test datasets
 Building a custom prompt evaluation workflow starts with creating a solid prompt and then generating test data to see how well it performs. Let's walk through setting up an evaluation system for a prompt that helps users write AWS-specific code.
 
 #### Setting Up the Goal
@@ -945,7 +945,7 @@ Please provide a solution to the following task:
 """
 ```
 
-#### Creating an Evaluation Dataset
+##### Creating an Evaluation Dataset
 
 An evaluation dataset contains inputs that we'll feed into our prompt. For each combination of prompt and input, we'll run the prompt and analyze the results.
 
@@ -1041,12 +1041,7 @@ with open('dataset.json', 'w') as f:
 This creates a `dataset.json` file in the same directory as your notebook, containing your list of tasks ready for prompt evaluation.
 
 With this foundation in place, you now have a systematic way to generate test data for evaluating how well your prompts perform across different types of AWS-related coding tasks.
-
-#### Downloads
-
-*   [001\_prompt\_evals.ipynb (opens in new tab)](https://cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/assets/1762977284/001_prompt_evals.ipynb?response-content-disposition=attachment&Expires=1787746106&Signature=V1nZ34HFSUNPYVaH3-DjO54oPqkrQrJaEw49r5Bg-Vm5kwrPxTG75tFf7qD6-3q2oDYQgcuG4-yShasUHpXs-GDmTimCJ~k-RQp~suYkkC6MkhHaQF-yKch95eg1VIPWgXQaYckak9NJTRspJf4U7xlZ5eeLION7rYhRlf95~2snD5vL3PfnuWQzrBCHsx32-43FU9SsvhrryFlgvmwxQ2WQkls4dJzpvtEMrGXdkyV42F9rn5ThFi0W2cjkV7-7GkPLamLlOw-qK7rtnP17Y73ollUybk6fgTAO2CfBIcnoN0GdMFnd85cCHnYWmAZYRhxtWb5uXYNGSypJoO5pJQ__&Key-Pair-Id=APKAI3B7HFD2VYJQK4MQ)
-
-## Running the eval
+### Running the eval
 Now that we have our evaluation dataset ready, it's time to build the core evaluation pipeline. This involves taking each test case, merging it with our prompt, feeding it to Claude, and then grading the results.
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623396%2F04_-_004_-_Running_the_Eval_00.1748623396420.png)
@@ -1158,7 +1153,7 @@ This pipeline represents the foundation of most AI evaluation systems. While it 
 
 Next, we'll dive into the critical topic of graders, which will transform our hardcoded scores into meaningful evaluations of Claude's performance.
 
-## Model based grading
+### Model based grading
 When building prompt evaluation workflows, grading systems provide objective signals about output quality. A grader takes model output and returns some kind of measurable feedback - typically a number between 1 and 10, where 10 represents high quality and 1 represents poor quality.
 
 #### Types of Graders
@@ -1268,7 +1263,7 @@ def run_test_case(test_case):
 
 [Downloads 001_prompt_evals_grader.ipynb (opens in new tab)](https://cc.sj-cdn.net/instructor/4hdejjwplbrm-anthropic/assets/1762977624/001_prompt_evals_grader.ipynb?response-content-disposition=attachment&Expires=1787746312&Signature=VFFYf1gQFwb~Ipf3SVxDScM~NZFgTutpRSnlkohEmTAeFbZwpxNAft52X42rxTLWnUG2dw7aQDq2~lkNxvwqQRHGO6wFhn68RYlEvMhjKuwV7gt9aSp5XvR6UrtSjzWxy4a65qWflrBfFosPXIHzsAdXbW9O058bhO~wOo3JB86BzYcUGYnW1nVsEL1RC9tPG2OCIIdmMZxA1jkEbaZRFv~fmpvc4Nkhl5gtJeJRxu0FaDXoH4WIwd5SdJo1X5asuL9SeIPezC6YiD3M4jmPW8r-mxsJo4j44MNj-St~9649SBYWG8xgIKB-Jv~Y6k916HskzFKOb8OI8hlO0GEi2A__&Key-Pair-Id=APKAI3B7HFD2VYJQK4MQ)
 
-### Code based grading
+#### Code based grading
 When evaluating AI models that generate code, you need more than just checking if the response makes sense. You also need to verify that the generated code actually has valid syntax and follows the correct format. This is where code-based grading comes in.
 
 #### How Code Grading Works
@@ -1327,7 +1322,7 @@ For the code grader to know which validator to use, your test cases need to spec
 
 You can update your dataset generation prompt to automatically include this format field by adding it to the example output structure.
 
-#### Improving Prompt Clarity
+### Improving Prompt Clarity
 
 To get better results from your AI model, make your prompt instructions more specific about the expected output format:
 
