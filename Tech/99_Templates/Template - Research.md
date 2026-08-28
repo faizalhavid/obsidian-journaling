@@ -11,6 +11,16 @@ last_updated: <% tp.date.now("YYYY-MM-DD") %>
 
 # 🔬 <% tp.file.title %>
 
+## 📑 Daftar Isi
+
+- [📖 Pertanyaan Penelitian](#-pertanyaan-penelitian)
+- [🔑 Temuan Utama](#-temuan-utama)
+- [📝 Catatan & Sumber](#-catatan--sumber)
+- [💡 Hipotesis / Insight](#-hipotesis--insight)
+- [🔗 Related Concepts](#-related-concepts)
+- [⏭️ Next Steps](#️-next-steps)
+- [🗺️ Part of](#️-part-of)
+
 ## 📖 Pertanyaan Penelitian
 > Apa yang ingin dijawab? Definisikan pertanyaan utama riset ini dalam 1–2 kalimat.
 
@@ -29,7 +39,6 @@ Tulis catatan detail di sini — kutipan, penjelasan, observasi, dengan link ke 
   - Poin penting: 
 
 ## 💡 Hipotesis / Insight
-Kesimpulan sementara atau insight yang muncul dari riset:
 - 
 
 ## 🔗 Related Concepts

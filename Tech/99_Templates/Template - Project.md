@@ -5,11 +5,22 @@ status: active
 area: 
 topic: 
 created: {{date:YYYY-MM-DD}}
+last_updated: {{date:YYYY-MM-DD}}
 deadline: 
-progress: 0
+progress: 0%
 ---
 
 # 🚀 {{title}}
+
+## 📑 Daftar Isi
+
+- [🎯 Tujuan](#-tujuan)
+- [📋 Deliverables](#-deliverables)
+- [🧭 Milestones](#-milestones)
+- [🛠️ Stack / Tools](#️-stack--tools)
+- [📚 Konsep Terkait](#-konsep-terkait)
+- [📝 Notes / Learnings](#-notes--learnings)
+- [🗺️ Part of](#️-part-of)
 
 ## 🎯 Tujuan
 > Apa yang ingin dicapai? Definisi "selesai" harus jelas.
@@ -31,8 +42,8 @@ progress: 0
 - [[]]
 - [[]]
 
-## 🗺️ Part of
-- [[MOC - ]]
-
 ## 📝 Notes / Learnings
 - 
+
+## 🗺️ Part of
+[[MOC - ]] · [[MOC - HOME]]

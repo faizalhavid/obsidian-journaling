@@ -40,6 +40,7 @@ Tech/
 │   └── AI-Engineering/
 ├── 05_Projects/                # goal-driven notes with deadlines and progress
 ├── 06_Research/                # deep-dive research and lit review staging area
+├── 07_Playground/              # runnable notebooks and experiment scripts (paired with courses/concepts)
 ├── 04_Courses/                 # structured learning content
 │   ├── index.base              # master course index (Bases)
 │   ├── <Area>/

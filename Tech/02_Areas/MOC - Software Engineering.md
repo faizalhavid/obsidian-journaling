@@ -39,6 +39,10 @@ created: 2026-08-21
 - [[MCP]] · [[Claude Code Hooks]] · [[CLAUDE.md file|CLAUDE.md]]
 - [[Prompt Engineering]]
 
+## 6. Playground
+
+- [[index|Playground Index]] · [[Git Basics - Playground Note|Git Basics - Playground]]
+
 ---
 
 ## 🔁 Related MOCs

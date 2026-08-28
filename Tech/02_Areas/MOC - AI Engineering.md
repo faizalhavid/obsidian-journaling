@@ -9,8 +9,7 @@ tags:
   - daily
 status: draft
 area: Meta
-created:
-  "{ date:YYYY-MM-DD }":
+created: 2026-08-26
 reviewed:
 ---
 
@@ -60,7 +59,10 @@ reviewed:
 - [[Guardrails & Safety]] · [[Multi-Agent System]]
 - [[AI Observability]]
 ## 5. Courses
-- [[AnthropicSkilljar]]
+- [[Anthropic - Skilljar]]
+
+## 6. Playground
+- [[index|Playground Index]] · [[Playground Note|Anthropic Skilljar - Playground]]
 ---
 
 ## 🔁 Related MOCs

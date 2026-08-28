@@ -39,6 +39,10 @@ created: 2026-08-21
 - [[Docker]] · [[Kubernetes]] · [[Orchestration]]
 - Terkait: [[MOC - DevOps]]
 
+## 6. Playground
+
+- [[index|Playground Index]] · [[Data Pipeline - Playground Note|Data Pipeline - Playground]]
+
 ---
 
 ## 🔁 Related MOCs

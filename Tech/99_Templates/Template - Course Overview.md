@@ -14,6 +14,17 @@ progress: 0%
 
 # 🎓 <% tp.file.title %>
 
+## 📑 Daftar Isi
+
+- [📖 Tentang Course](#-tentang-course)
+- [🎯 Learning Objectives](#-learning-objectives)
+- [🛠️ Prerequisites](#️-prerequisites)
+- [📋 Modul](#-modul)
+- [💡 Key Takeaways](#-key-takeaways)
+- [🔗 Related Concepts](#-related-concepts)
+- [🗺️ Part of](#️-part-of)
+- [📝 Sumber & Referensi](#-sumber--referensi)
+
 ## 📖 Tentang Course
 > Deskripsi singkat course: apa yang dipelajari, konteks, dan relevansinya.
 

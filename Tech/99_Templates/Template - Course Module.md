@@ -14,6 +14,17 @@ progress: 0%
 
 # 📘 <% tp.file.title %>
 
+## 📑 Daftar Isi
+
+- [📖 Ringkasan](#-ringkasan)
+- [🔑 Poin Inti](#-poin-inti)
+- [📝 Catatan Detail](#-catatan-detail)
+- [💡 Contoh / Ilustrasi](#-contoh--ilustrasi)
+- [❓ Pertanyaan](#-pertanyaan)
+- [✅ Review Checklist](#-review-checklist)
+- [⏭️ Next](#️-next)
+- [🗺️ Part of](#️-part-of)
+
 ## 📖 Ringkasan
 > Satu–dua kalimat: apa yang dibahas di modul ini dan mengapa penting.
 
@@ -27,11 +38,10 @@ Tulis catatan panjang di sini — penjelasan, definisi, observasi dari video/buk
 
 ## 💡 Contoh / Ilustrasi
 ```
-# ganti dengan blok kode / diagram / screenshot yang relevan
+
 ```
 
 ## ❓ Pertanyaan
-Pertanyaan yang muncul selama belajar, atau soal latihan dari course:
 - 
 - 
 

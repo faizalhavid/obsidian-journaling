@@ -42,6 +42,10 @@ created: 2026-08-21
 - [[Penetration Testing]] · [[Red Team]] · [[Blue Team]]
 - [[CTF]] · [[MITRE ATT&CK]]
 
+## 7. Playground
+
+- [[index|Playground Index]] · [[OWASP - Playground Note|OWASP - Playground]]
+
 ---
 
 ## 🔁 Related MOCs
