@@ -774,9 +774,7 @@ This approach gives you precise control over Claude's output format, making it m
 
 ---
 ## Prompt evaluation
-
-### Prompt evaluation
-When working with Claude, writing a good prompt is just the beginning. To build reliable AI applications, you need to understand two critical concepts: prompt engineering and prompt evaluation. Prompt engineering gives you techniques for writing better prompts, while prompt evaluation helps you measure how well those prompts actually work.
+>When working with Claude, writing a good prompt is just the beginning. To build reliable AI applications, you need to understand two critical concepts: prompt engineering and prompt evaluation. Prompt engineering gives you techniques for writing better prompts, while prompt evaluation helps you measure how well those prompts actually work.
 
 ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1748623381%2F04_-_001_-_Prompt_Evaluation_00.1748623381094.png)
 
@@ -1363,7 +1361,7 @@ Once you've implemented code grading, run your evaluation to get a baseline scor
 
 ---
 
-
+---
 ## Prompt engineering techniques
 _Belum dicatat._
 ### Prompt engineering
