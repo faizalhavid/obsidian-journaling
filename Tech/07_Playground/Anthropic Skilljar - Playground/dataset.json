@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that takes an AWS ARN string and extracts the service name from it. For example, given 'arn:aws:s3:::my-bucket' it should return 's3'."
+    "task": "Write a Python function that takes an AWS ARN string and extracts the service name from it. For example, 'arn:aws:s3:::my-bucket' should return 's3'.",
+    "format": "python",
+    "solution_criteria": "Function correctly parses ARN format, splits on colons, returns the service component (index 2), handles invalid input gracefully, and works for various AWS services (EC2, Lambda, S3, etc.)"
   },
   {
-    "task": "Create a JSON object representing an AWS S3 bucket policy that allows public read access to all objects in a bucket named 'my-public-assets'."
+    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to all S3 buckets. The policy should follow AWS IAM policy structure with Version, Statement, Effect, Action, and Resource fields.",
+    "format": "json",
+    "solution_criteria": "Valid JSON structure, includes Version field (2012-10-17), Statement is an array, Effect is 'Allow', Action includes S3 read operations (s3:Get*, s3:List*), Resource uses wildcard for all buckets, follows AWS IAM policy syntax"
   },
   {
-    "task": "Write a regex pattern that validates AWS Access Key IDs, which start with 'AKIA' or 'ASIA' followed by 16 alphanumeric characters."
+    "task": "Write a regex pattern that validates AWS Access Key IDs. AWS Access Key IDs are exactly 20 characters long, start with 'AKIA' or 'ASIA', and contain only uppercase letters and numbers.",
+    "format": "regex",
+    "solution_criteria": "Pattern matches strings starting with AKIA or ASIA, enforces exactly 20 character length, allows only uppercase A-Z and 0-9 characters, rejects invalid formats, uses anchors to match entire string"
   }
 ]
