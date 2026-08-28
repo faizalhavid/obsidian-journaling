@@ -11,7 +11,7 @@ area: AI Engineering
 course: Anthropic Skilljar
 module: Overview
 source: https://training.skilljar.com/claude-with-the-anthropic-api
-instructor: 
+instructor:
 created: 2026-08-25
 last_updated: 2026-08-26
 progress: 40%
