@@ -1,0 +1,121 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "The human body's immune system is a complex network of cells, tissues, and organs that work together to defend against pathogens. White blood cells, including lymphocytes and macrophages, patrol the bloodstream searching for foreign invaders. When a virus enters the body, antibodies are produced to neutralize the threat, while inflammation markers like cytokines signal immune cells to converge on the infection site. The lymph nodes act as filtering stations, trapping bacteria and viruses before they spread further. Additionally, the skin serves as a physical barrier, and stomach acid destroys many ingested pathogens before they can cause harm."
+    },
+    "solution_criteria": [
+      "Identifies all major components of immune system function (cells, tissues, organs, and their defensive mechanisms)",
+      "Distinguishes between different types of immune responses (cellular, humoral, physical barriers)",
+      "Topics are listed in a clear, organized format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a minimalist single-word input"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The ancient Silk Road was not merely a single trade route but rather an extensive network of interconnected pathways spanning over 4,000 miles across Asia. Merchants transported silk, spices, ceramics, and precious metals between China, Central Asia, the Middle East, and Europe from roughly the 2nd century BCE until the 15th century CE. Beyond commerce, the Silk Road facilitated cultural exchange, spreading Buddhism from India to East Asia, Islamic scholarship from Persia to China, and technological innovations like papermaking and gunpowder westward. Political instability in Central Asia and the rise of maritime trade routes eventually diminished the Silk Road's prominence."
+    },
+    "solution_criteria": [
+      "Identifies all major topics: trade goods, geography, time period, cultural exchange, and decline factors",
+      "Distinguishes between primary topics (the network itself) and secondary topics (specific impacts and examples)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a complex multi-clause sentence containing nested ideas"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Machine learning has revolutionized healthcare diagnostics. Deep learning models trained on medical imaging datasets can now detect certain cancers with 94% accuracy, often surpassing human radiologists. However, these systems require massive amounts of labeled training data, which raises privacy concerns when using patient records. Additionally, the computational resources needed to train these models consume significant energy, contributing to the carbon footprint of AI research. Despite these challenges, hospitals are increasingly adopting AI-assisted diagnosis tools to improve patient outcomes and reduce diagnostic delays.",
+      "num_topics": 4
+    },
+    "solution_criteria": [
+      "Identifies all major topics: machine learning in healthcare, diagnostic accuracy, data privacy concerns, and environmental/computational costs",
+      "Does not conflate related subtopics into single topics or incorrectly fragment topics",
+      "Returns exactly 4 topics as specified"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with technical jargon from an unfamiliar domain"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Machine learning has revolutionized software development. Neural networks, a subset of ML, excel at image recognition tasks. Deep learning extends this with multiple layers of abstraction, enabling breakthrough applications in natural language processing. Meanwhile, reinforcement learning powers autonomous systems by learning through trial and error. These technologies collectively drive innovation across healthcare diagnostics, autonomous vehicles, and recommendation systems."
+    },
+    "solution_criteria": [
+      "All main topics (machine learning, neural networks, deep learning, reinforcement learning) are identified",
+      "Subtopics or specific applications are mentioned",
+      "Topics are presented in a clear, organized format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with ambiguous language that could have multiple interpretations"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Climate change is driving unprecedented shifts in global weather patterns. Rising temperatures are causing polar ice sheets to melt at accelerating rates, which contributes to sea level rise threatening coastal cities. Simultaneously, changing precipitation patterns are intensifying droughts in agricultural regions like the Sahel and Central America, while other areas experience increased flooding. These environmental changes are forcing mass migration, destabilizing economies dependent on agriculture, and straining international resource-sharing agreements. Scientists warn that without immediate emissions reductions, feedback loops could trigger irreversible tipping points within the next decade."
+    },
+    "solution_criteria": [
+      "Identifies all major topics (climate change, ice melt/sea level rise, precipitation changes, societal impacts)",
+      "Accurately distinguishes between primary causes and secondary effects",
+      "Captures interconnected relationships between environmental and socioeconomic consequences"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with contradictory or paradoxical statements"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Machine learning models require careful evaluation to ensure they perform well on unseen data. Cross-validation is a technique where the dataset is split into multiple folds, and the model is trained and tested on different combinations of these folds. This helps estimate how the model will generalize to new data. Additionally, metrics like precision, recall, and F1-score are important for classification tasks, while regression models use metrics such as Mean Squared Error (MSE) and R-squared to assess performance."
+    },
+    "solution_criteria": [
+      "Identifies all key evaluation concepts mentioned in the content",
+      "Distinguishes between validation techniques and performance metrics"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with input containing cultural or regional idioms"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The smartphone market experienced significant disruption in 2023. Apple released the iPhone 15 with improved camera capabilities and faster processing power, gaining 12% market share. Meanwhile, Samsung struggled with supply chain issues affecting Galaxy S24 production, while Chinese manufacturers like Xiaomi and OnePlus capitalized on the gap with competitive pricing strategies. Emerging markets in India and Southeast Asia showed 40% year-over-year growth in smartphone adoption, driven by affordable 5G devices and improved network infrastructure.",
+      "topic_area": "technology industry trends"
+    },
+    "solution_criteria": [
+      "Identifies all major companies mentioned and their market activities",
+      "Captures key metrics and statistics (market share percentages, growth rates)",
+      "Recognizes geographic and demographic trends discussed"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with extremely long run-on text with minimal punctuation"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The smartphone market has experienced dramatic shifts over the past decade. Apple's iPhone revolutionized mobile computing with its intuitive touchscreen interface and ecosystem of apps, fundamentally changing how consumers interact with technology. Meanwhile, Android devices proliferated across multiple manufacturers, capturing significant market share through customization options and diverse price points. Today, concerns about data privacy, battery longevity, and the environmental impact of electronic waste have become central to consumer purchasing decisions, driving demand for repairability and sustainable manufacturing practices."
+    },
+    "solution_criteria": [
+      "Identifies all major topics (iPhone innovation, Android competition, consumer concerns)",
+      "Distinguishes between different levels of topics (e.g., main topics vs. subtopics like data privacy)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with highly structured, formal academic language"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Machine learning models require careful evaluation across multiple dimensions. Accuracy measures the proportion of correct predictions but can be misleading with imbalanced datasets. Precision focuses on false positives, identifying how many predicted positive cases were actually positive, while recall captures false negatives by measuring the proportion of actual positive cases that were correctly identified. The F1 score balances precision and recall, particularly useful when you need to optimize for both metrics equally. ROC-AUC evaluates classifier performance across all classification thresholds, providing a comprehensive view of trade-offs between true positive and false positive rates."
+    },
+    "solution_criteria": [
+      "All five evaluation metrics are identified and distinguished from each other",
+      "Each metric's purpose or use case is accurately captured"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with casual, colloquial, or slang-heavy input"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Sarah invested $5,000 in a savings account with a 3.5% annual interest rate compounded monthly. After 18 months, she withdrew $2,000. She then left the remaining balance untouched for another 2 years. What is her final account balance?"
+    },
+    "solution_criteria": [
+      "Correctly applies compound interest formula with monthly compounding for the first 18 months",
+      "Accurately subtracts the $2,000 withdrawal",
+      "Correctly calculates compound interest on the remaining balance for the additional 2 years",
+      "Provides the final balance amount"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with input mixing multiple languages or scripts"
+  }
+]

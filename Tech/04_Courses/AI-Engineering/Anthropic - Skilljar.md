@@ -6,21 +6,64 @@ aliases:
 tags:
   - ai-engineering
   - course
-status: in-progress
+  - project
+status: active
 area: AI Engineering
 course: Anthropic Skilljar
 module: Overview
 source: https://training.skilljar.com/claude-with-the-anthropic-api
 instructor:
-created: 2026-08-25
-last_updated: 2026-08-26
-progress: 40%
+created:
+  "{ date:YYYY-MM-DD }":
+last_updated:
+  "{ date:YYYY-MM-DD }":
+progress: 0%
 certificates:
+topic:
+deadline:
 ---
 
 # 🤖 Anthropic Skilljar
 
 ## 📑 Daftar Isi
+
+# 🚀 {{title}}
+
+## 📑 Daftar Isi
+
+- [🎯 Tujuan](#-tujuan)
+- [📋 Deliverables](#-deliverables)
+- [🧭 Milestones](#-milestones)
+- [🛠️ Stack / Tools](#️-stack--tools)
+- [📚 Konsep Terkait](#-konsep-terkait)
+- [📝 Notes / Learnings](#-notes--learnings)
+- [🗺️ Part of](#️-part-of)
+
+## 🎯 Tujuan
+> Apa yang ingin dicapai? Definisi "selesai" harus jelas.
+
+## 📋 Deliverables
+- [ ] 
+- [ ] 
+- [ ] 
+
+## 🧭 Milestones
+- [ ] M1: 
+- [ ] M2: 
+- [ ] M3: 
+
+## 🛠️ Stack / Tools
+- 
+
+## 📚 Konsep Terkait
+- [[]]
+- [[]]
+
+## 📝 Notes / Learnings
+- 
+
+## 🗺️ Part of
+[[MOC - ]] · [[MOC - HOME]]
 
 - [Introduction](#introduction)
   - [Welcome to the course](#welcome-to-the-course)

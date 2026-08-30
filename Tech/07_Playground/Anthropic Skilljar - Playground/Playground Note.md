@@ -14,19 +14,6 @@ last_updated: 2026-08-26
 
 # 🧪 Playground — Anthropic Skilljar
 
-## 📑 Daftar Isi
-
-- [Id Request](#id-request)
-- [Response](#response)
-- [Status Penyelesaian](#status-penyelesaian)
-- [Token Usage](#token-usage)
-- [Temperature 0.0 vs 1.0 (n=15 sampel)](#temperature-00-vs-10-n15-sampel)
-  - [Setup Eksperimen](#setup-eksperimen)
-  - [Data Hasil](#data-hasil)
-  - [Temuan Utama](#temuan-utama)
-  - [Kesimpulan Akhir](#kesimpulan-akhir)
-- [🗺️ Part of](#️-part-of)
-
 dari hasil run 
 ```python
 message = client.messages.create(
@@ -133,3 +120,40 @@ print(message.content)
 
 ## 🗺️ Part of
 [[Anthropic - Skilljar]] · [[MOC - Playground]] · [[MOC - AI Engineering]] · [[MOC - HOME]]
+
+
+# 🧪 Playground — Prompt Engineering Tech
+
+```mermaid
+sequenceDiagram
+participant User
+participant Evaluator
+participant Claude
+participant Storage
+
+User->>Evaluator: Generate Dataset
+Evaluator->>Claude: Generate Unique Idea
+Claude-->>Evaluator: Idea List
+loop Each Idea
+Evaluator->>Claude: Generate Test Case
+Claude-->>Evaluator: Test Case
+
+end
+
+Evaluator->>Storage: Save Dataset File
+User->>Evaluator: Run Evaluation
+Evaluator->>Storage: Load Dataset File
+
+loop Each Test Case
+Evaluator->>User: Run Prompt
+User-->>Evaluator: Model Output
+Evaluator->>Claude: Grade Output
+Claude-->>Evaluator: Score And Reasoning
+
+end
+
+Evaluator->>Evaluator: Compute Average Score
+Evaluator->>Storage: Save Results File
+Evaluator->>Storage: Save Report File
+Evaluator-->>User: Results
+```
