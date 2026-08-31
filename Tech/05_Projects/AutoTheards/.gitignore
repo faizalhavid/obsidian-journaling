@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+# Playwright session — contains auth cookies, never commit
+.sessions/
+
+# Playwright failure screenshot
+error_screenshot.png
+
+# SQLite database
+*.db
+
+# pytest cache
+.pytest_cache/
